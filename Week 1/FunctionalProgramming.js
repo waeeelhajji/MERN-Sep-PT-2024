@@ -62,13 +62,64 @@ CopyObJFreeze.push(78)
 console.log(ObJFreeze)
 console.log(CopyObJFreeze)
 
+//!-------------------------------Map and Filter
+//?-------.map()
+
+for (let index = 0; index < animals.length; index++) {
+    console.log(animals[index])
+
+}
+
+animals.map(function (oneElem) {
+    console.log(oneElem)
+})
+
+for (let index = 0; index < animals.length; index++) {
+    const newArray = []
+    newArray.push(animals[index] + " is awesome")
+    return newArray
+}
+
+
+
+
+// ! the new version of the array it need to be stored inside variable 
+const newAnimals = animals.map(function (oneElm) {
+    return oneElm + " is awesome"
+})
+console.log(newAnimals)
+
+// This Version that we need to implement from now 
+const a = [10, 20, 30, 40, 50]
+
+const double = a.map((num) => {
+    return num * 2
+})
+
+console.log(double)
 
 
 
 
 
+//?-------.filter()
 
 
+const animals = ["leopard ", "giraffe", "zebra", "elephant", "monkey", "lionn"]
+const filteredAnimals = animals.filter((animal) => {
+    if (animal.length > 5) {
+        return true
+    } else {
+        return false
+    }
+})
+console.log(filteredAnimals)
+
+const ages = [10, 20, 30, 40, 50]
+const AgeForTheParty = ages.filter((age) => {
+    return age > 25
+})
+console.log(AgeForTheParty)
 
 
 

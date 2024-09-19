@@ -125,12 +125,12 @@ const SayHiInArrowFunction3 = a => "Hello ES6"
 // 10 decimal
 // 16 Exadecimal
 
-// var age = 18
-// if (age < 20) {
-//     return "You are Yong"
-// } else {
-//     return "You are clear To go "
-// }
+var age = 18
+if (age < 20) {
+    return "You are Yong"
+} else {
+    return "You are clear To go "
+}
 
 //--- ES6
 age < 20 ? "You are Yong" : "You are clear To go"
