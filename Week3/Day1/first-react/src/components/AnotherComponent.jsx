@@ -16,6 +16,7 @@ const AnotherComponent = (props) => {
 
     const incrementFunction = () => {
         // this function changes the State
+        setNum(num + 1)
     }
 
 
@@ -26,8 +27,8 @@ const AnotherComponent = (props) => {
             {num}
             <h2>Hello from the other Component</h2>
             {anotherData}
-            {/* <button onClick={() => alert("This button has been clicked!")}>Click Me</button> */}
-            <button onClick={synth}>Click Me</button>
+            <button onClick={incrementFunction}>Click Me</button>
+            {/* <button onClick={synth}>Click Me</button> */}
 
         </fieldset>
     )
